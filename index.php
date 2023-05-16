@@ -10,7 +10,11 @@ class Movie{
         $this->title = $_title;
     }
 
-    public function setGenre($_genre){
+    public function setGenre(...$_genre){
+        $this->genre =$_genre;
+    } 
+    
+    public function AddGenre($_genre){
         $this->genre[] =$_genre;
     } 
 }
